@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture Firm</title>
-    <!-- Google Font -->
+    <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- DaisyUI & Tailwind CSS -->
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/f0ce0bb943.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI & TailwindCSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Internal CSS -->
@@ -23,13 +25,83 @@
     </style>
 </head>
 
-<body class="manrope-font">
-    <header>
+<body class="manrope-font max-w-full">
+    <!-- header section  -->
+    <header class="min-h-screen w-full bg-slate-100">
 
+        <!-- nav section  -->
+        <nav class="max-w-screen-lg mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost font-extrabold text-3xl"><i
+                            class="fa-solid fa-arrow-right -rotate-45"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-lg font-extrabold">Home</a></li>
+                        <li><a class="text-lg">Services</a></li>
+                        <li><a class="text-lg">Portfolio</a></li>
+                        <li><a class="text-lg">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                    <div class="bg-white rounded-full p-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="bg-white rounded-full p-2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <a class="btn bg-lime-400 text-lg md:text-xl font-extrabold rounded-3xl ">Book
+                            Consult</a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <!-- <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section  -->
+        <div class="max-w-screen-lg mx-auto mb-24">
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col">
+                    <img src="./assets/banner.png" class="max-w-sm rounded-lg" />
+                    <div class="text-center">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl w-5/6 mx-auto font-extrabold">A barn house of this
+                            design has a
+                            striking
+                            appearance
+                        </h1>
+                        <p class="py-6 w-4/6 mx-auto text-gray-600 font-medium">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
+                        </p>
+                        <button class="btn bg-lime-300 rounded-3xl">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <!-- main section  -->
     <main>
 
     </main>
+    <!-- footer section -->
     <footer>
 
     </footer>
